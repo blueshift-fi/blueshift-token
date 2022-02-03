@@ -1,0 +1,12 @@
+params.json
+tx.*
+.idea
+.iml
+*/pparams.json
+
+*/dist-newstyle
+
+token-metadata-tool
+token-metadata-creator
+
+*.json.draw
