@@ -117,12 +117,7 @@ Complete follow steps:
     Then compile your uniq contract setting UTxO (\<TxHash>#\<TxIx>), token name and mint amount:
 
     ```
-    cabal run one-shot-currency "<TxHash>#<TxIx>" "BlueShift token" 100000000000000
-    ```
-
-    **Use default params ("BlueShift token", 100_000_000 * 10^6)**
-    ```
-    cabal run one-shot-currency "<TxHash>#<TxIx>"
+    cabal run one-shot-currency "<TxHash>#<TxIx>" "BLUES" 100000000000000
     ```
 
 4. Mint tokens
@@ -135,7 +130,7 @@ Complete follow steps:
     `<amount>` will be multiplied by 10^6.
 
     ```
-    ./mint.sh <network> one-shot-currency "BlueShift token" 100000000 minter owner
+    ./mint.sh <network> one-shot-currency "BLUES" 100000000 minter owner
 
     # choose utxo that contain enough lovelace (~4000000) and satisfies redeemer condition
     >>>
@@ -169,8 +164,8 @@ Complete follow steps:
 
         ```
         ./registerToken.sh testnet one-shot-currency minter \
-            "BlueShift token" \
-            "A currency for the BlueShift DEX." \
+            "BLUES" \
+            "A currency for the Blueshift DEX." \
             "BLUES" \
             "https://blueshift.fi/" \
             icon.png \
